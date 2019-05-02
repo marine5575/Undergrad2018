@@ -39,7 +39,7 @@ options = "nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=NumEven
 #directory name
 rootDir = 'mkNtuple/merged/'
 configDir = './'
-weightDir = ch + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet) + '_' + str(ver)
+weightDir = ch + '_l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet) + '_' + str(ver)
 
 #Check if the model and files already exist
 if not os.path.exists( os.path.join(configDir, weightDir, 'weights') ):
