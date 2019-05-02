@@ -9,7 +9,7 @@ TMVA.Tools.Instance()
 
 #Channel and version
 if len(sys.argv) < 9:
-  print("Not enough arguements: Ch (cmutau, ctautau, cnunu), nLep, nJet, nbJet, ntauJet, Ver")
+  print("Not enough arguements: Ch (cmutau, ctautau, cnunu), nLep, nJet, nbJet, ntauJet, Ver, file path, name")
   sys.exit()
 ch = sys.argv[1]
 lep = sys.argv[2]
@@ -103,12 +103,10 @@ outtree.Branch('nbjet' , nbjet  , 'nbjet/I')
 for i in xrange(totalevt):
   data_tree.GetEntry(i)
 
-#  if njets_cut == 3:
-#    if data_tree.njets != njets_cut: continue
-#  elif njets_cut == 4:
-#    if data_tree.njets < njets_cut: continue
-#  if nbjets_cut != 0:
-#    if data_tree.nbjets_m != nbjets_cut: continue
+  if data_tree.nlepton != int(lep): continue
+  if data_tree.njet < int(jet): continue
+  if data_tree.nbjet < int(bjet): continue
+  if data_tree.ntaujet < int(taujet): continue
 
   score[0]         = reader.EvaluateMVA('BDT')
   njet[0]         = data_tree.njet
@@ -116,9 +114,9 @@ for i in xrange(totalevt):
   outtree.Fill()
   #print('processing '+str(Nevt)+'th event', end='\r')
 
-#score[0]         = -1
-#njet[0]         = 0
-#nbjet[0]      = 0
+score[0]      = -1
+njet[0]       = 0
+nbjet[0]      = 0
 outtree.Fill()
 
 outfile.Write()
