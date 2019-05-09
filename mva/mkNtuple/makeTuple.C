@@ -13,7 +13,7 @@ void makeTuple::Loop(const std::string outFileName)
   TFile* f = new TFile(outFileName.c_str(), "recreate");
   TTree* tree = new TTree("tree", "ntuple");
 
-  int b_njet, b_nbjet, b_ncjet, b_ntaujet, b_nlepton;
+  float b_njet, b_nbjet, b_ncjet, b_ntaujet, b_nlepton;
   float b_lepton1_pt, b_lepton1_eta, b_lepton1_phi, b_lepton1_e;
   float b_lepton2_pt, b_lepton2_eta, b_lepton2_phi, b_lepton2_e;
   float b_met_pt, b_met_phi, b_met_e;
@@ -25,12 +25,12 @@ void makeTuple::Loop(const std::string outFileName)
   float b_lep1_met_dphi, b_tau1_met_dphi, b_tau1lep1_met_dphi;
   float b_lep1_b1_dr, b_lep1_c1_dr;
 
-  tree->Branch("njet", &b_njet, "njet/I");
-  tree->Branch("nbjet", &b_nbjet, "nbjet/I");
-  tree->Branch("ncjet", &b_ncjet, "ncjet/I");
-  tree->Branch("ntaujet", &b_ntaujet, "ntaujet/I");
+  tree->Branch("njet", &b_njet, "njet/F");
+  tree->Branch("nbjet", &b_nbjet, "nbjet/F");
+  tree->Branch("ncjet", &b_ncjet, "ncjet/F");
+  tree->Branch("ntaujet", &b_ntaujet, "ntaujet/F");
 
-  tree->Branch("nlepton", &b_nlepton, "nlepton/I");
+  tree->Branch("nlepton", &b_nlepton, "nlepton/F");
   tree->Branch("lepton1_pt", &b_lepton1_pt, "lepton1_pt/F");
   tree->Branch("lepton1_eta", &b_lepton1_eta, "lepton1_eta/F");
   tree->Branch("lepton1_phi", &b_lepton1_phi, "lepton1_phi/F");

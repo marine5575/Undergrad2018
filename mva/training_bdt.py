@@ -56,7 +56,7 @@ bkg_files = ['hist_DY012JetsM10toinf.root', 'hist_TT012Jets.root',
              'hist_W0JetsToLNu.root', 'hist_W1JetsToLNu.root', 'hist_W2JetsToLNu.root',
              'hist_WW.root', 'hist_WZ.root', 'hist_ZZ.root']
 
-int_vars = ['njet', 'nbjet', 'ncjet', 'ntaujet',]
+#int_vars = ['njet', 'nbjet', 'ncjet', 'ntaujet',]
 float_vars = ['lepton1_pt', 'lepton2_pt', 'met_pt', 'tau1_pt', 'tau2_pt',
               'jet_ht', 'jetlepmet_ht',
               'lep1met_pt', 'lep1tau1_pt', 'tau1tau2_pt', 'tau1_tau2_dr',
@@ -78,8 +78,8 @@ fout = TFile("output_" + weightDir + ".root","recreate")
 factory = TMVA.Factory("TMVAClassification", fout, "!V:!Silent:Color:DrawProgressBar:AnalysisType=Classification" )
 
 loader = TMVA.DataLoader(weightDir)
-for var in int_vars:
-    loader.AddVariable(var, "I")
+#for var in int_vars:
+#    loader.AddVariable(var, "F")
 for var in float_vars:
     loader.AddVariable(var, "F")
 
