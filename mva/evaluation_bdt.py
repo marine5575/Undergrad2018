@@ -127,7 +127,7 @@ for i in xrange(totalevt):
 
   #if i%1000 == 0: print 'processing '+str(i)+'th event\r'
 
-score[0] = -1
+score[0] = -2
 njet[0]  = 0
 nbjet[0] = 0
 outtree.Fill()
