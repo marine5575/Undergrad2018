@@ -3,6 +3,7 @@ rm merged/hist_*
 
 hadd merged/hist_DY012JetsM10toinf.root $FOLDER/hist_DY012JetsM10toinf*.root
 hadd merged/hist_W0JetsToLNu.root $FOLDER/hist_W0JetsToLNu*.root
+hadd merged/hist_W1JetsToLNu.root $FOLDER/hist_W1JetsToLNu*.root
 hadd merged/hist_W2JetsToLNu.root $FOLDER/hist_W2JetsToLNu*.root
 hadd merged/hist_TT012Jets.root $FOLDER/hist_TT012Jets*.root
 hadd merged/hist_WW.root $FOLDER/hist_WW*.root
