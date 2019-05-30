@@ -52,9 +52,10 @@ if not os.path.exists( os.path.join(configDir, weightDir, 'training_bdt.py') ):
   shutil.copy2('training_bdt.py', os.path.join(configDir, weightDir, 'training_bdt.py'))
 
 sig_files = ['hist_LQcmutauLO.root', 'hist_LQctautauLO.root', 'hist_LQcnunuLO.root']
-bkg_files = ['hist_DY012JetsM10toinf.root', 'hist_TT012Jets.root',
-             'hist_W0JetsToLNu.root', 'hist_W1JetsToLNu.root', 'hist_W2JetsToLNu.root',
-             'hist_WW.root', 'hist_WZ.root', 'hist_ZZ.root']
+#bkg_files = ['hist_DY012JetsM10toinf.root', 'hist_TT012Jets.root',
+#             'hist_W0JetsToLNu.root', 'hist_W1JetsToLNu.root', 'hist_W2JetsToLNu.root',
+#             'hist_WW.root', 'hist_WZ.root', 'hist_ZZ.root']
+bkg_files = ['hist_TT012Jets.root',]
 
 #int_vars = ['njet', 'nbjet', 'ncjet', 'ntaujet',]
 float_vars = ['lepton1_pt', 'lepton2_pt', 'met_pt', 'tau1_pt', 'tau2_pt',
@@ -96,6 +97,7 @@ for fName in sig_files:
     trees.append([f, t])
 for fName in bkg_files:
     fileWeight = 1
+    """
     if   'DY012Jets' in fName: fileWeight = 0.287 #54047/118284
     elif 'TT012Jets' in fName: fileWeight = 0.021 #2536/118284
     elif 'W0Jets'    in fName: fileWeight = 1.0
@@ -104,6 +106,7 @@ for fName in bkg_files:
     elif 'WW'        in fName: fileWeight = 0.006 #712/118284
     elif 'WZ'        in fName: fileWeight = 0.002 #283/118284
     elif 'ZZ'        in fName: fileWeight = 0.001 #99/118284
+    """
     f = TFile(rootDir+fName)
     t = f.Get("tree")
     loader.AddBackgroundTree(t, fileWeight)
