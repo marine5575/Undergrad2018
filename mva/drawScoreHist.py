@@ -39,9 +39,10 @@ with open(source) as fp:
     event_file = event_file.replace("./output", "../analyzer/output")
     event_file = event_file.rstrip('\n')
 
-    score_file = event_file.replace("./output/hist_", "score_")
+    score_file = event_file.replace("../analyzer/output/hist", "score")
     score_file = score_file.rstrip('\n')
     score_file_list.append(score_file)
+    print score_file
 
     hist_file = score_file.replace("score", "hist")
     hist_file_list.append(hist_file)
