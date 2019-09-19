@@ -3,37 +3,20 @@ import os, sys
 import random
 
 def train_files(ch):
-	train_size = 0.8
 	rootDir = "/home/user123/work/Undergrad2018/Delphes2Flat/output/"
 
-	list_output = os.listdir("mkNtuple/output/")
-	list_output.remove(".gitkeep")
-	'''
-	bkg_procs = ['DY012JetsM10toinf', 
-		'TT012Jets', 'W0JetsToLNu', 'W1JetsToLNu', 'W2JetsToLNu', 'WW', 'WZ', 'ZZ']
-	'''
-	bkg_procs = ['TT012Jets']
-
 	sig = []
-
-	if ch == "cmutau":
-		for sig_file in list_output:
-			if ch in sig_file:
-				sig.append(sig_file)
-				list_output.remove(sig_file)
-
-	elif ch == "ctautau":
-		for	sig_file in list_output:
-			if ch in sig_file:
-				sig.append(sig_file)
-				list_output.remove(sig_file)
-
-	elif ch == "cnunu":
-		for sig_file in list_output:
-			if ch in sig_file:
-				sig.append(sig_file)
-				list_output.remove(sig_file)
+	bkg = []
+	if ch == "cmutau" or ch == "ctautau" or ch == "cnunu":
+		for i in range(1, 6):
+			sig.append('hist_LQ' + ch + 'LO_00' + str(i) + '.root')
 
 	else: print("Check channel : cmutau, ctautau or cnunu")
 
-	return sig, list_output
+	for i in range(1, 10):
+		bkg.append('hist_TT012Jets_00' + str(i) + '.root')
+	for i in range(10, 51):
+		bkg.append('hist_TT012Jets_0' + str(i) + '.root')
+
+
+	return sig, bkg

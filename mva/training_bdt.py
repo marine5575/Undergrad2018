@@ -29,16 +29,23 @@ idx['j4b3'] = 3
 idx['j4b4'] = 4
 """
 
-nsig_cmutau = ['55000', '23000', '50000', '31000', '2600']
-nsig_ctautau = ['50000', '17000', '52000', '28000', '1150']
-nsig_cnunu = ['50000', '17000', '52000', '28000', '1150']
-nbkg = ['180000', '7100', '280000', '25000', '1300']
-#if ch == "Hct":
-#  options = "nTrain_Signal=" + nsig_Hct[idx[jetcat]] + ":nTrain_Background=" + nbkg[idx[jetcat]] + ":nTest_Signal=0:nTest_Background=0:SplitMode=Random:NormMode=NumEvents:!V"
+train_size = 0.8
+
+nevt = {}
+nevt['l1_j3_b0_tau1'] = {'cmutau' : str(int(33178*train_size)), 'ctautau' : str(int(14266*train_size)),
+'cnunu' : str(int(790*train_size)), 'bkg' : str(int(48240*train_size))}
+nevt['l1_j2_b1_tau0'] = {'cmutau' : str(int(62848*train_size)), 'ctautau' : str(int(23580*train_size)),
+'cnunu' : str(int(12248*train_size)), 'bkg' : str(int(326226*train_size))}
+
+sel = 'l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet)
+
+if sel not in nevt.keys():
+	print('Selection must be (lep 1, jet 3, bjet 0, tau 1) or (lep 1, jet 2, bjet 1, tau 0)')
+	sys.exit()
+
+options = "nTrain_Signal=" + nevt[sel][ch] + ":nTrain_Background=" + nevt[sel]['bkg'] + ":nTest_Signal=0:nTest_Background=0:SplitMode=Random:NormMode=NumEvents:!V"
 
 sig_files, bkg_files = train_files(ch)
-
-options = "nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=NumEvents:!V"
 
 #directory name
 #rootDir = 'mkNtuple/merged/'
