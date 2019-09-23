@@ -20,15 +20,6 @@ ver = sys.argv[6]
 sigCut = TCut("nlepton == " + str(lep) + " && njet >= " + str(jet) + " && nbjet >= " + str(bjet) + " && ntaujet >= " + str(taujet))
 bkgCut = TCut("nlepton == " + str(lep) + " && njet >= " + str(jet) + " && nbjet >= " + str(bjet) + " && ntaujet >= " + str(taujet))
 
-"""
-idx = {}
-idx['j3b2'] = 0
-idx['j3b3'] = 1
-idx['j4b2'] = 2
-idx['j4b3'] = 3
-idx['j4b4'] = 4
-"""
-
 train_size = 0.8
 
 nevt = {}
@@ -62,14 +53,6 @@ for item in os.listdir( os.path.join(configDir, weightDir, 'weights') ):
     #sys.exit()
 if not os.path.exists( os.path.join(configDir, weightDir, 'training_bdt.py') ):
   shutil.copy2('training_bdt.py', os.path.join(configDir, weightDir, 'training_bdt.py'))
-
-'''
-sig_files = ['hist_LQcmutauLO.root', 'hist_LQctautauLO.root', 'hist_LQcnunuLO.root']
-bkg_files = ['hist_DY012JetsM10toinf.root', 'hist_TT012Jets.root',
-             'hist_W0JetsToLNu.root', 'hist_W1JetsToLNu.root', 'hist_W2JetsToLNu.root',
-             'hist_WW.root', 'hist_WZ.root', 'hist_ZZ.root']
-bkg_files = ['hist_TT012Jets.root',]
-'''
 
 #int_vars = ['njet', 'nbjet', 'ncjet', 'ntaujet',]
 float_vars = ['lepton1_pt', 'lepton2_pt', 'met_pt', 'tau1_pt', 'tau2_pt',

@@ -3,10 +3,10 @@ import os, sys
 import random
 
 def train_files(ch):
-	rootDir = "/home/user123/work/Undergrad2018/Delphes2Flat/output/"
 
 	sig = []
 	bkg = []
+
 	if ch == "cmutau" or ch == "ctautau" or ch == "cnunu":
 		for i in range(1, 6):
 			sig.append('hist_LQ' + ch + 'LO_00' + str(i) + '.root')
