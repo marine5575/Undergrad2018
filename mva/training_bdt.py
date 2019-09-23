@@ -32,9 +32,16 @@ sel = 'l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet)
 
 if sel not in nevt.keys():
 	print('Selection must be (lep 1, jet 3, bjet 0, tau 1) or (lep 1, jet 2, bjet 1, tau 0)')
-	sys.exit()
+	#sys.exit()
 
-options = "nTrain_Signal=" + nevt[sel][ch] + ":nTrain_Background=" + nevt[sel]['bkg'] + ":nTest_Signal=0:nTest_Background=0:SplitMode=Random:NormMode=NumEvents:!V"
+if sel in nevt.keys():
+  n_sig = nevt[sel][ch]
+  n_bkg = nevt[sel]['bkg']
+else:
+  n_sig = "0"
+  n_bkg = "0"
+
+options = "nTrain_Signal=" + n_sig + ":nTrain_Background=" + n_bkg + ":nTest_Signal=0:nTest_Background=0:SplitMode=Random:NormMode=NumEvents:!V"
 
 sig_files, bkg_files = train_files(ch)
 
