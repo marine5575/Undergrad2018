@@ -42,4 +42,17 @@ make -j4
 
 #How to run
 path_to_/plotIt/plotIt -o plots/ path_to_/plotIt/configs/config.yml -y
+```
+
+Final
+```{.Bash}
+#For cmutau S1(l1_j3_b0_tau1)
+cd mva/mkNtuple
+cat ../../analyzer/file_list.txt | xargs -i -P$(nproc) -n2 python launchAna.py
+cd ..
+python training_bdt.py cmutau 1 3 0 1 01
+cat ../analyzer/file_list.txt  | xargs -i -P$(nproc) -n2 python evaluation_bdt.py cmutau 1 3 0 1 01
+python drawScoreHist.py cmutau 1 3 0 1 01
+source job_merge.sh hist_cmutau_l1_j3_b0_tau1_01/
+python allPlots.py
 ``
