@@ -1,0 +1,291 @@
+#####Please Wait#####
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts10 BDT             0.787
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts10 BDT             0.072 (0.095)       0.432 (0.437)      0.732 (0.736)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts20 BDT             0.789
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts20 BDT             0.088 (0.096)       0.443 (0.446)      0.737 (0.743)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts30 BDT             0.787
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth3_nCuts30 BDT             0.083 (0.093)       0.432 (0.441)      0.734 (0.741)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts10 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts10 BDT             0.081 (0.099)       0.445 (0.452)      0.737 (0.741)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts20 BDT             0.091 (0.098)       0.447 (0.456)      0.735 (0.748)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts30 BDT             0.790
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth4_nCuts30 BDT             0.080 (0.101)       0.449 (0.455)      0.737 (0.747)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts10 BDT             0.790
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts10 BDT             0.080 (0.101)       0.449 (0.452)      0.735 (0.744)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts20 BDT             0.091 (0.105)       0.450 (0.456)      0.739 (0.748)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts30 BDT             0.792
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree50_MaxDepth5_nCuts30 BDT             0.085 (0.103)       0.448 (0.458)      0.736 (0.747)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts10 BDT             0.790
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts10 BDT             0.071 (0.100)       0.438 (0.447)      0.739 (0.743)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts20 BDT             0.792
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts20 BDT             0.088 (0.101)       0.452 (0.456)      0.742 (0.750)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts30 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth3_nCuts30 BDT             0.082 (0.099)       0.444 (0.456)      0.742 (0.749)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts10 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts10 BDT             0.082 (0.105)       0.449 (0.461)      0.739 (0.747)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts20 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts20 BDT             0.091 (0.104)       0.454 (0.466)      0.739 (0.751)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth4_nCuts30 BDT             0.084 (0.108)       0.458 (0.462)      0.741 (0.753)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts10 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts10 BDT             0.087 (0.109)       0.452 (0.461)      0.739 (0.750)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts20 BDT             0.089 (0.114)       0.452 (0.467)      0.739 (0.752)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree100_MaxDepth5_nCuts30 BDT             0.086 (0.108)       0.455 (0.468)      0.736 (0.750)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts10 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts10 BDT             0.071 (0.105)       0.446 (0.456)      0.739 (0.748)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts20 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts20 BDT             0.091 (0.110)       0.452 (0.463)      0.742 (0.752)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth3_nCuts30 BDT             0.084 (0.105)       0.457 (0.466)      0.742 (0.755)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts10 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts10 BDT             0.087 (0.117)       0.449 (0.466)      0.739 (0.752)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts20 BDT             0.093 (0.111)       0.453 (0.470)      0.735 (0.752)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth4_nCuts30 BDT             0.085 (0.119)       0.454 (0.469)      0.743 (0.758)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts10 BDT             0.792
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts10 BDT             0.087 (0.115)       0.451 (0.470)      0.738 (0.754)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts20 BDT             0.091 (0.122)       0.453 (0.475)      0.739 (0.757)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree200_MaxDepth5_nCuts30 BDT             0.087 (0.114)       0.454 (0.479)      0.737 (0.753)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts10 BDT             0.792
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts10 BDT             0.080 (0.112)       0.449 (0.468)      0.739 (0.748)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts20 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts20 BDT             0.092 (0.115)       0.449 (0.469)      0.740 (0.757)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts30 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth3_nCuts30 BDT             0.084 (0.112)       0.450 (0.470)      0.746 (0.762)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts10 BDT             0.793
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts10 BDT             0.092 (0.127)       0.447 (0.476)      0.743 (0.759)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts20 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts20 BDT             0.085 (0.130)       0.450 (0.480)      0.735 (0.758)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts30 BDT             0.792
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth4_nCuts30 BDT             0.089 (0.130)       0.452 (0.482)      0.739 (0.763)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts10 BDT             0.790
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts10 BDT             0.089 (0.130)       0.447 (0.483)      0.734 (0.759)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts20 BDT             0.790
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts20 BDT             0.091 (0.134)       0.445 (0.487)      0.737 (0.762)
+
+
+Name         Method          ROC-integ
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts30 BDT             0.791
+DataSet              MVA              Signal efficiency from test sample (from training sample)
+Name                Method          @B=0.01             @B=0.10            @B=0.30
+-------------------------------------------------------------------------------------------------------------------
+./cmutau_l1_j3_b0_tau1_01cmutau_l1_j3_b0_tau1_01_NTree400_MaxDepth5_nCuts30 BDT             0.096 (0.135)       0.443 (0.491)      0.738 (0.763)
+
+
+No folder or output file!
+ 

@@ -44,16 +44,20 @@ float_vars = ['lepton1_pt', 'lepton2_pt', 'met_pt', 'tau1_pt', 'tau2_pt',
               'jet_ht', 'jetlepmet_ht',
               'lep1met_pt', 'lep1tau1_pt', 'tau1tau2_pt', 'tau1_tau2_dr',
               'lep1_lep2_dr', 'tau1_lep1_dr', 'lep1_met_dphi', 'tau1_met_dphi',
-              'tau1lep1_met_dphi', 'lep1_b1_dr']
+              'tau1lep1_met_dphi', 'lep1_b1_dr', 'tau1_lep1_dphi',
+							'lep1b1_pt_sum', 'lep1b1_sum_pt', 'lepb1_pt_sum', 'jet_pt_sum', 'jet_sum_pt',
+							'jet_lep1_pt', 'jet_lep1_dr']
 
 if int(lep) < 2:
-  for tmp in ['lepton2_pt', 'lep1_lep2_dr']:
+  for tmp in ['lepton2_pt', 'lep1_lep2_dr', 'lepb1_pt_sum']:
     float_vars.remove(tmp)
-if int(bjet) < 1: float_vars.remove('lep1_b1_dr')
+if int(bjet) < 1: 
+	for tmp in ['lep1_b1_dr', 'lep1b1_sum_pt', 'lep1b1_pt_sum', 'lepb1_pt_sum']:
+		if tmp in float_vars: float_vars.remove(tmp)
 if int(taujet) < 2:
   for tmp in ['tau2_pt', 'tau1tau2_pt', 'tau1_tau2_dr',]: float_vars.remove(tmp)
   if int(taujet) < 1:
-    for tmp2 in ['tau1_pt',  'lep1tau1_pt',   'tau1_lep1_dr', 'tau1_met_dphi', 'tau1lep1_met_dphi']:
+    for tmp2 in ['tau1_pt',  'lep1tau1_pt',   'tau1_lep1_dr', 'tau1_met_dphi', 'tau1lep1_met_dphi', 'tau1_lep1_dphi']:
       float_vars.remove(tmp2)
 
 if os.path.exists(os.path.join(configDir, scoreDir, 'score_' + name.split('_')[1])):

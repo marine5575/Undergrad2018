@@ -4,7 +4,7 @@ import time
 
 #Version of classifier
 if len(sys.argv) < 8:
-  print("Not enough arguements: Ch, lepton, jet, bJet, tauJet, ver, Recompute")
+  print("Not enough arguements: Ch, lepton, jet, bJet, tauJet, ver, era")
   sys.exit()
 ch = sys.argv[1]
 lep = sys.argv[2]

@@ -27,10 +27,6 @@ nevt['l1_j3_b0_tau1'] = {'cmutau' : str(int(33178*train_size)), 'ctautau' : str(
 'cnunu' : str(int(790*train_size)), 'bkg' : str(int(48240*train_size))}
 nevt['l1_j2_b1_tau0'] = {'cmutau' : str(int(62848*train_size)), 'ctautau' : str(int(23580*train_size)),
 'cnunu' : str(int(12248*train_size)), 'bkg' : str(int(326226*train_size))}
-nevt['l1_j3_b1_tau1'] = {'cmutau' : str(int(18958*train_size)), 'ctautau' : str(int(8104*train_size)),
-'cnunu' : str((int(490)*train_size)), 'bkg' : str(int(36898*train_size))}
-nevt['l1_j3_b2_tau1'] = {'cmutau' : str(int(3258*train_size)), 'ctautau' : str(int(1304*train_size)),
-'cnunu' : str(int(96*train_size)), 'bkg' : str(int(14548*train_size))}
 
 sel = 'l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet)
 
@@ -55,7 +51,7 @@ for nTree in [50, 100, 200, 400]:
       #directory name
       #rootDir = 'mkNtuple/merged/'
       rootDir = 'mkNtuple/output/'
-      configDir = './' + ch + '_l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet) + '_' + str(ver) + '/'
+      configDir = './' + ch + '_l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet) + '_' + str(ver) + '/'  
       weightDir = ch + '_l' + str(lep) + '_j' + str(jet) + '_b' + str(bjet) + '_tau' + str(taujet) + '_' + str(ver) + '_NTree' + str(nTree) + '_MaxDepth' + str(depth) + '_nCuts' + str(nCuts)
 
       #Check if the model and files already exist
@@ -73,20 +69,16 @@ for nTree in [50, 100, 200, 400]:
                     'jet_ht', 'jetlepmet_ht',
                     'lep1met_pt', 'lep1tau1_pt', 'tau1tau2_pt', 'tau1_tau2_dr',
                     'lep1_lep2_dr', 'tau1_lep1_dr', 'lep1_met_dphi', 'tau1_met_dphi',
-                    'tau1lep1_met_dphi', 'lep1_b1_dr', 'tau1_lep1_dphi',
-                    'lep1b1_pt_sum', 'lep1b1_sum_pt', 'lepb1_pt_sum', 'jet_pt_sum', 'jet_sum_pt',
-                    'jet_lep1_pt', 'jet_lep1_dr']
+                    'tau1lep1_met_dphi', 'lep1_b1_dr']
 
       if int(lep) < 2:
-        for tmp in ['lepton2_pt', 'lep1_lep2_dr', 'lepb1_pt_sum']:
+        for tmp in ['lepton2_pt', 'lep1_lep2_dr']:
           float_vars.remove(tmp)
-      if int(bjet) < 1: 
-        for tmp in ['lep1_b1_dr', 'lep1b1_pt_sum', 'lep1b1_sum_pt', 'lepb1_pt_sum']:
-          if tmp in float_vars: float_vars.remove(tmp)
+      if int(bjet) < 1: float_vars.remove('lep1_b1_dr')
       if int(taujet) < 2:
         for tmp in ['tau2_pt', 'tau1tau2_pt', 'tau1_tau2_dr',]: float_vars.remove(tmp)
         if int(taujet) < 1:
-          for tmp2 in ['tau1_pt',  'lep1tau1_pt',   'tau1_lep1_dr', 'tau1_met_dphi', 'tau1lep1_met_dphi', 'tau1_lep1_dphi']:
+          for tmp2 in ['tau1_pt',  'lep1tau1_pt',   'tau1_lep1_dr', 'tau1_met_dphi', 'tau1lep1_met_dphi']:
             float_vars.remove(tmp2)
 
 
